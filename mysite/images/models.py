@@ -7,5 +7,5 @@ class ImagesClass(models.Model):
     gender = models.CharField(max_length=16, null=True)
     location = models.CharField(max_length=256, null=True)
     create_time = models.DateTimeField(default=datetime.datetime.now())
-    image = models.TextField()
-    lable = models.TextField()
+    imagepath = models.CharField(max_length=256, null=True)
+    label = models.TextField()
